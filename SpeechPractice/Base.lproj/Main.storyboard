@@ -107,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J4b-6a-FSd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1770" y="802"/>
+            <point key="canvasLocation" x="1770" y="740"/>
         </scene>
         <!--Create Custom Practice Session View Controller-->
         <scene sceneID="nb8-Xg-7CS">
@@ -139,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Egq-ad-jdB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1770" y="-558"/>
+            <point key="canvasLocation" x="1770" y="-526"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="g0V-VO-lR5">
