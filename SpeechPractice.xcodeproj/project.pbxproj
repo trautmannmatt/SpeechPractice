@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2B6C1D602572E58500155B57 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C1D5F2572E58500155B57 /* SettingsViewController.swift */; };
-		2B6C1D642573283600155B57 /* CreateRandomPracticeSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C1D632573283600155B57 /* CreateRandomPracticeSessionViewController.swift */; };
-		2B6C1D6725732A6400155B57 /* CreateCustomPracticeSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C1D6625732A6400155B57 /* CreateCustomPracticeSessionViewController.swift */; };
+		2B6C1D642573283600155B57 /* PracticeSentencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C1D632573283600155B57 /* PracticeSentencesViewController.swift */; };
+		2B6C1D6725732A6400155B57 /* PracticeSingleWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C1D6625732A6400155B57 /* PracticeSingleWordsViewController.swift */; };
 		2B6C1D6A25732B2100155B57 /* PastSessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6C1D6925732B2100155B57 /* PastSessionsViewController.swift */; };
 		2B7382D92572C61600A01BB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7382D82572C61600A01BB7 /* AppDelegate.swift */; };
 		2B7382DB2572C61600A01BB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7382DA2572C61600A01BB7 /* SceneDelegate.swift */; };
@@ -21,8 +21,8 @@
 
 /* Begin PBXFileReference section */
 		2B6C1D5F2572E58500155B57 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		2B6C1D632573283600155B57 /* CreateRandomPracticeSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRandomPracticeSessionViewController.swift; sourceTree = "<group>"; };
-		2B6C1D6625732A6400155B57 /* CreateCustomPracticeSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCustomPracticeSessionViewController.swift; sourceTree = "<group>"; };
+		2B6C1D632573283600155B57 /* PracticeSentencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSentencesViewController.swift; sourceTree = "<group>"; };
+		2B6C1D6625732A6400155B57 /* PracticeSingleWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSingleWordsViewController.swift; sourceTree = "<group>"; };
 		2B6C1D6925732B2100155B57 /* PastSessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastSessionsViewController.swift; sourceTree = "<group>"; };
 		2B7382D52572C61600A01BB7 /* SpeechPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B7382D82572C61600A01BB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,8 +69,8 @@
 				2B7382DC2572C61600A01BB7 /* HomeViewController.swift */,
 				2B6C1D5F2572E58500155B57 /* SettingsViewController.swift */,
 				2B6C1D6925732B2100155B57 /* PastSessionsViewController.swift */,
-				2B6C1D6625732A6400155B57 /* CreateCustomPracticeSessionViewController.swift */,
-				2B6C1D632573283600155B57 /* CreateRandomPracticeSessionViewController.swift */,
+				2B6C1D6625732A6400155B57 /* PracticeSingleWordsViewController.swift */,
+				2B6C1D632573283600155B57 /* PracticeSentencesViewController.swift */,
 				2B7382DE2572C61600A01BB7 /* Main.storyboard */,
 				2B7382E12572C61900A01BB7 /* Assets.xcassets */,
 				2B7382E32572C61900A01BB7 /* LaunchScreen.storyboard */,
@@ -150,11 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B7382DD2572C61600A01BB7 /* HomeViewController.swift in Sources */,
-				2B6C1D6725732A6400155B57 /* CreateCustomPracticeSessionViewController.swift in Sources */,
+				2B6C1D6725732A6400155B57 /* PracticeSingleWordsViewController.swift in Sources */,
 				2B6C1D6A25732B2100155B57 /* PastSessionsViewController.swift in Sources */,
 				2B7382D92572C61600A01BB7 /* AppDelegate.swift in Sources */,
 				2B7382DB2572C61600A01BB7 /* SceneDelegate.swift in Sources */,
-				2B6C1D642573283600155B57 /* CreateRandomPracticeSessionViewController.swift in Sources */,
+				2B6C1D642573283600155B57 /* PracticeSentencesViewController.swift in Sources */,
 				2B6C1D602572E58500155B57 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

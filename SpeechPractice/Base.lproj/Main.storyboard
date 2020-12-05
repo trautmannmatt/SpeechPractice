@@ -17,37 +17,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="rCj-I2-UWN">
-                                <rect key="frame" x="24.666666666666657" y="332" width="365" height="232"/>
+                                <rect key="frame" x="84.666666666666686" y="332" width="245" height="232"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqy-ia-R2l">
-                                        <rect key="frame" x="0.0" y="0.0" width="365" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="245" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                        <state key="normal" title="Create Random Practice Session">
+                                        <state key="normal" title="Practice Sentences">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="p6D-Ym-MoO" kind="show" id="z5w-cX-tct"/>
+                                            <segue destination="Bcs-FC-iNb" kind="show" id="PIk-zy-qWe"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aW8-yO-aGX">
-                                        <rect key="frame" x="0.0" y="94" width="365" height="44"/>
+                                        <rect key="frame" x="0.0" y="94" width="245" height="44"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                        <state key="normal" title="Create Custom Practice Session">
+                                        <state key="normal" title="Practice Single Words">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Bcs-FC-iNb" kind="show" id="maV-fF-I1y"/>
+                                            <segue destination="p6D-Ym-MoO" kind="show" id="imQ-25-5xT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJv-5M-K4W">
-                                        <rect key="frame" x="0.0" y="188" width="365" height="44"/>
+                                        <rect key="frame" x="0.0" y="188" width="245" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <state key="normal" title="Past Sessions">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="gwn-ti-L7Z" kind="show" id="o6L-OG-UKC"/>
+                                            <segue destination="gwn-ti-L7Z" kind="show" id="8P1-ix-fCl"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -60,7 +60,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="AVT-oA-iMN" kind="show" id="E0I-OW-Llc"/>
+                                    <segue destination="AVT-oA-iMN" kind="show" id="Ik3-8J-D3s"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="945" y="104"/>
         </scene>
-        <!--Create Random Practice Session View Controller-->
+        <!--Practice Single Words View Controller-->
         <scene sceneID="B5r-zX-4fj">
             <objects>
-                <viewController id="p6D-Ym-MoO" customClass="CreateRandomPracticeSessionViewController" customModule="SpeechPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="p6D-Ym-MoO" customClass="PracticeSingleWordsViewController" customModule="SpeechPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zLP-ie-yNO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w5a-qV-ATs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2475" y="-185"/>
+            <point key="canvasLocation" x="2584" y="387"/>
         </scene>
         <!--Past Sessions View Controller-->
         <scene sceneID="BUn-ss-bkJ">
@@ -109,10 +109,10 @@
             </objects>
             <point key="canvasLocation" x="1770" y="740"/>
         </scene>
-        <!--Create Custom Practice Session View Controller-->
+        <!--Practice Sentences View Controller-->
         <scene sceneID="nb8-Xg-7CS">
             <objects>
-                <viewController id="Bcs-FC-iNb" customClass="CreateCustomPracticeSessionViewController" customModule="SpeechPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Bcs-FC-iNb" customClass="PracticeSentencesViewController" customModule="SpeechPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CfP-gJ-0RA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zgW-rf-T12" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2475" y="469"/>
+            <point key="canvasLocation" x="2583" y="-283"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="US0-ZE-4Yq">
