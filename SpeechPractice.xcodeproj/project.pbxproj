@@ -17,6 +17,7 @@
 		2B7382E02572C61600A01BB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7382DE2572C61600A01BB7 /* Main.storyboard */; };
 		2B7382E22572C61900A01BB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B7382E12572C61900A01BB7 /* Assets.xcassets */; };
 		2B7382E52572C61900A01BB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7382E32572C61900A01BB7 /* LaunchScreen.storyboard */; };
+		2BDCC68B257C134400C2A075 /* RandomSentences.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BDCC68A257C134400C2A075 /* RandomSentences.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		2B7382E12572C61900A01BB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B7382E42572C61900A01BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B7382E62572C61900A01BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BDCC68A257C134400C2A075 /* RandomSentences.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RandomSentences.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				2B7382E12572C61900A01BB7 /* Assets.xcassets */,
 				2B7382E32572C61900A01BB7 /* LaunchScreen.storyboard */,
 				2B7382E62572C61900A01BB7 /* Info.plist */,
+				2BDCC68A257C134400C2A075 /* RandomSentences.txt */,
 			);
 			path = SpeechPractice;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			files = (
 				2B7382E52572C61900A01BB7 /* LaunchScreen.storyboard in Resources */,
 				2B7382E22572C61900A01BB7 /* Assets.xcassets in Resources */,
+				2BDCC68B257C134400C2A075 /* RandomSentences.txt in Resources */,
 				2B7382E02572C61600A01BB7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
