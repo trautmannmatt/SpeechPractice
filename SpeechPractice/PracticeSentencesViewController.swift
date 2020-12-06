@@ -13,6 +13,7 @@ class PracticeSentencesViewController: UIViewController {
     
     @IBOutlet weak var numberOfSentences: UILabel!
     
+    // adjusting slider will change # of sentences
     @IBAction func sentenceSlider(_ sender: UISlider) {
         numberOfSentences.text = String(Int(sender.value))
     }
@@ -42,12 +43,15 @@ class PracticeSentencesViewController: UIViewController {
         // split sentences
         let sentences = readStringProject.split(separator:"\n")
         
-        //let numSentences = Int(numberOfSentences.text)
         
-        for i in 0...4{
-            let realString = String(sentences[i])
+        
+        let numSentences = Int(numberOfSentences.text!) ?? 0
+        
+        for _ in 0...numSentences{
+            let rand = Int.random(in: 0..<sentences.count)
+            let realString = String(sentences[rand])
             practice.saySentence(realString)
-            sleep(11)
+            sleep(10)
         }
         
     }
