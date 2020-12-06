@@ -11,16 +11,23 @@ import Foundation
 
 class PracticeSentencesViewController: UIViewController {
     
+    @IBOutlet weak var numberOfSentences: UILabel!
+    
+    @IBAction func sentenceSlider(_ sender: UISlider) {
+        numberOfSentences.text = String(Int(sender.value))
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Practice Sentences"
         
         print("Practice Sentences Has Loaded!")
+    }
+    
+    @IBAction func startSession(_ sender: Any) {
         
+        // initialize instance of PracticeSession
         let practice = PracticeSession()
-        let test = "This is a test sentence"
-        
-        // practice.saySentence(test)
         
         // load random sentences file
         let fileURLProject = Bundle.main.path(forResource: "RandomSentences", ofType: "txt")
@@ -31,25 +38,20 @@ class PracticeSentencesViewController: UIViewController {
             print("Failed to read from project")
             print(error)
         }
-        // print(readStringProject)
-        
+
         // split sentences
         let sentences = readStringProject.split(separator:"\n")
+        
+        //let numSentences = Int(numberOfSentences.text)
         
         for i in 0...4{
             let realString = String(sentences[i])
             practice.saySentence(realString)
-            sleep(5)
+            sleep(11)
         }
         
-
-        
     }
-
-
 }
-
-
 
 class PracticeSession {
     
@@ -62,10 +64,4 @@ class PracticeSession {
         let synthesizer = AVSpeechSynthesizer()
         synthesizer.speak(utterance)
     }
-    
-    func delay(_ delay:Double, closure:@escaping ()->()) {
-        DispatchQueue.main.asyncAfter(
-            deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
-    }
-    
 }

@@ -116,14 +116,64 @@
                     <view key="view" contentMode="scaleToFill" id="CfP-gJ-0RA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSN-42-uMT">
+                                <rect key="frame" x="121.66666666666669" y="199" width="171" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Start Session">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startSession:" destination="Bcs-FC-iNb" eventType="touchUpInside" id="BZO-Ii-GiS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8N-GH-mfV">
+                                <rect key="frame" x="306" y="580" width="28.666666666666686" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Sq3-Xz-wvE">
+                                <rect key="frame" x="48" y="633" width="318" height="31"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="sentenceSlider:" destination="Bcs-FC-iNb" eventType="valueChanged" id="jnQ-TC-Rbf"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Number of sentences:  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5G-Zt-K7y">
+                                <rect key="frame" x="60" y="580" width="237.66666666666663" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="QBi-N4-uJt"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="e5G-Zt-K7y" firstAttribute="top" secondItem="ZSN-42-uMT" secondAttribute="bottom" constant="333" id="7Wt-s2-zA9"/>
+                            <constraint firstItem="Sq3-Xz-wvE" firstAttribute="leading" secondItem="QBi-N4-uJt" secondAttribute="leading" constant="50" id="BeK-sF-Kes"/>
+                            <constraint firstItem="e5G-Zt-K7y" firstAttribute="leading" secondItem="QBi-N4-uJt" secondAttribute="leading" constant="60" id="D9p-sL-PHA"/>
+                            <constraint firstItem="QBi-N4-uJt" firstAttribute="trailing" secondItem="Sq3-Xz-wvE" secondAttribute="trailing" constant="50" id="Idi-A8-QVS"/>
+                            <constraint firstItem="L8N-GH-mfV" firstAttribute="leading" secondItem="e5G-Zt-K7y" secondAttribute="trailing" constant="8.3300000000000001" id="RTl-cQ-ASe"/>
+                            <constraint firstItem="Sq3-Xz-wvE" firstAttribute="centerY" secondItem="CfP-gJ-0RA" secondAttribute="centerY" constant="200" id="XjR-PW-fKA"/>
+                            <constraint firstItem="Sq3-Xz-wvE" firstAttribute="centerX" secondItem="CfP-gJ-0RA" secondAttribute="centerX" id="Yrc-Yd-nVx"/>
+                            <constraint firstItem="Sq3-Xz-wvE" firstAttribute="top" secondItem="e5G-Zt-K7y" secondAttribute="bottom" constant="25" id="dyw-Fr-iHK"/>
+                            <constraint firstItem="Sq3-Xz-wvE" firstAttribute="top" secondItem="L8N-GH-mfV" secondAttribute="bottom" constant="25" id="kfb-MD-TiL"/>
+                            <constraint firstItem="QBi-N4-uJt" firstAttribute="trailing" secondItem="L8N-GH-mfV" secondAttribute="trailing" constant="60" id="lcl-V8-9jg"/>
+                            <constraint firstItem="L8N-GH-mfV" firstAttribute="top" secondItem="QBi-N4-uJt" secondAttribute="top" constant="492" id="qoN-gH-m0S"/>
+                            <constraint firstItem="ZSN-42-uMT" firstAttribute="centerY" secondItem="CfP-gJ-0RA" secondAttribute="centerY" constant="-225" id="scW-nW-Ztb"/>
+                            <constraint firstItem="ZSN-42-uMT" firstAttribute="centerX" secondItem="CfP-gJ-0RA" secondAttribute="centerX" id="yBL-ZK-Jyp"/>
+                            <constraint firstItem="L8N-GH-mfV" firstAttribute="leading" secondItem="e5G-Zt-K7y" secondAttribute="trailing" constant="8.3300000000000001" id="zzd-VN-V3K"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SzE-e1-Jkk"/>
+                    <connections>
+                        <outlet property="numberOfSentences" destination="L8N-GH-mfV" id="zex-Fk-NVW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zgW-rf-T12" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2583" y="-283"/>
+            <point key="canvasLocation" x="2582.608695652174" y="-283.25892857142856"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="US0-ZE-4Yq">
